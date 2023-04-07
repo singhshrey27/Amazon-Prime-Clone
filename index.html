@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_Newprime.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+     
+</head>
+<body>
+    <nav id="navagiation_bar">
+        <div id="nav1">
+            <ul class="list">
+                <li id="primetwin"><a href=""></a>PrimeTwin</li>
+            <li class="l0"><a class="a1" href="">Home</a></li>
+            <li class="l0"><a class="a1" onclick="movies()">Movies</a></li>
+            <li class="l0"><a class="a1" onclick="kids()">Kids</a></li>
+            <li class="l0"><a class="a1" href="">Sports</a></li>
+        </ul>
+    </div>
+    <div id="nav2">
+        <ul class="list" id="llii">
+            <li  class="l0" id="search"><input id="search1" type="text" placeholder="Search"></li>
+            <li class="l0">Login</li>
+        </ul>
+    </div>
+    </nav>
+    
+    <div id="header">
+     <div id="hed1"></div> 
+     <div id="hed2"></div>
+    </div>
+    <div id="button">
+        <button> <a id="bhra" href="https://www.youtube.com/watch?v=BUjXzrgntcY&t=109s&ab_channel=SonyMusicIndia" target="_blank">Watch now</a> </button>
+        <button>+Add to wishlist</button>
+        <button>Details</button>
+    </div>
+    <div id="fanfav1">
+     Latest & Trending 
+    </div>
+    <div id="fanfav_1">
+        <div class="box1" id="lor" ></div>
+        <div class="box1" id="dh" ></div>
+        <div class="box1" id="tp" > </div>
+        <div class="box1" id="ol" ></div>
+        <div class="box1" id="tl" ></div>
+        <div class="box1" id="bs" ></div>
+        <div class="box1" id="or" ></div>
+        <div class="box1" id="tb" ></div>
+        <div class="box1" id="mm" >More...</div>
+    </div>
+    <div id="fanfav2">
+     Kids
+    </div>
+    <div id="fanfav_2">
+        <div class="box2" id="addm" ></div>
+        <div class="box2" id="mad" ></div>
+        <div class="box2" id="abm" ></div>
+        <div class="box2" id="mega" ></div>
+        <div class="box2" id="htg" ></div>
+        <div class="box2" id="tbd" ></div>
+        <div class="box2" id="kk7" ></div>
+        <div class="box2" id="kk8" ></div>
+        <div class="box2" id="kk9" >More...</div>
+    </div>
+    <div id="fanfav3">
+    Movies
+    </div>
+    <div id="fanfav_3">
+        <div class="box3" id="m1" ></div>
+        <div class="box3" id="m2" ></div>
+        <div class="box3" id="m3" ></div>
+        <div class="box3" id="m4" ></div>
+        <div class="box3" id="m5" ></div>
+        <div class="box3" id="m6" ></div>
+        <div class="box3" id="m7" ></div>
+        <div class="box3" id="m8" ></div>
+        <div class="box3" id="m9" >
+            More...
+        </div>
+    </div>
+    <div id="cbc">Choose by Genres</div>
+    <div id="cat">
+        <div class="cat1" id="action" >Action</div>
+        <div class="cat1" id="bollywood" >Bollywood</div>
+        <div class="cat1" id="sf" >Science fiction</div>
+        <div class="cat1" id="comedy" >Comedy</div>
+        <div class="cat1" id="horror" >Horror</div>
+        <div class="cat1" id="romance" >Romance</div>
+    </div>
+    <div id="choose_language">
+        Choose by language
+    </div>
+    <div id="language">
+        <div class="lan">HINDI</div>
+        <div class="lan">ENGLISH</div>
+        <div class="lan">TAMIL</div>
+        <div class="lan">TELUGU</div>
+        <div class="lan">MALAYALAM</div>
+        <div class="lan">BENGALI</div>
+        <div class="lan">MARATHI</div>
+        <div class="lan">JAPANESE</div>
+        <div class="lan">KOREAN</div>
+    </div>
+    <div id="extra">
+        <div id="social_media">
+            <div class="social" id="facebook" ><a href="#" class="fa fa-facebook"></a></div>
+            <div class="social" id="instagram" ><a href="#" class="fa fa-instagram"></a></div>
+            <div class="social" id="twitter" ><a href="#" class="fa fa-twitter"></a></div>
+            <div class="social" id="linkedin" ><a href="#" class="fa fa-linkedin"></a></div>
+        </div>
+        <div id="extra1">
+            <div class="eee"> <a class="ancor" href="">About Primetwin</a> </div>
+            <div class="eee"> <a class="ancor" href="">Terms of use</a> </div>
+            <div class="eee"> <a class="ancor" href="">Privacy Policy</a> </div>
+            <div class="eee"> <a class="ancor" href="">FAQ</a> </div>
+            <div class="eee"> <a class="ancor" href="">Feedback</a> </div>
+        </div>
+        <div id="rights">
+            © 2022 PRIME. All Rights Reserved. twin Box Office and all related channel and programming logos are service <br> marks of, and all related programming visuals and elements are the property of, twin Box Office, Inc. All rights <br> reserved.
+        </div>
+        <div class="primetwin">
+            Primetwin<div class="com">.com.inc</div>
+        </div>
+    </div>
+    <script>
+        function movies()
+        {var targetpos=1751;
+        var currentpos=0;
+        var scrollinterval=setInterval(function(){
+            if(currentpos>=targetpos)
+           { clearInterval(scrollinterval);
+            return;}
+            currentpos+=50;
+
+            window.scrollBy(0,50);
+        },50);}
+        function kids()
+        {var targetpos=1400;
+        var currentpos=0;
+        var scrollinterval=setInterval(function(){
+            if(currentpos>=targetpos)
+           { clearInterval(scrollinterval);
+            return;}
+            currentpos+=50;
+
+            window.scrollBy(0,50);
+        },50);}
+        // targetpos=1800;
+        // currentpos=0;
+    </script>
+</body>
+</html>
